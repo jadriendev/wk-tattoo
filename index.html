@@ -19,7 +19,7 @@
     <title>Home | WK Tattoo</title>
 </head>
 <body class="min-h-screen flex flex-col bg-gradient-to-br from-black via-zinc-900 to-black">
-    <header class="w-full bg-gradient-to-r from-zinc-950 via-black to-zinc-900 fixed top-0 w-full bg-white/10 backdrop-blur-xl border-b border-white/10">
+    <header class="w-full bg-gradient-to-r from-zinc-950 via-black to-zinc-900 fixed top-0 w-full z-50 bg-white/10 backdrop-blur-xl border-b border-white/10">
         <div class="mx-auto max-w-[1400px] px-6">
             <nav style="font-family: 'Bebas Neue';" class="hidden lg:flex items-center justify-between py-3 px-2">
                 <div class="">
@@ -78,7 +78,7 @@
                 </div>
 
                 <ul style="font-family: 'Bebas Neue';" class="flex flex-col text-2xl tracking-wider">
-                    <li><a class="lock px-6 py-4 text-white hover:bg-zinc-800" href="index.html">Home</a></li>
+                    <li><a class="block px-6 py-4 text-white hover:bg-zinc-800" href="index.html">Home</a></li>
                     <li><a class="block px-6 py-4 text-white hover:bg-zinc-800" href="about-us.html">About Us</a></li>
                     <li><a class="block px-6 py-4 text-white hover:bg-zinc-800" href="artists.html">Artists</a></li>
                     <li><a class="block px-6 py-4 text-white hover:bg-zinc-800" href="piercings.html">Piercings</a></li>
@@ -89,7 +89,54 @@
         </div>
     </header>
 
-    <main class="py-16 flex-1"></main>
+    <main class="flex-1 pt-[103px] lg:pt-[130px]">
+        <section class="w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[600px] xl:h-[800px] overflow-hidden">
+            <video id="heroVideo"
+                class="w-full h-full object-cover"
+                autoplay
+                muted
+                loop
+                playsinline>
+                <source src="images/WK Files (Website)/WK-VID.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section style="font-family: 'Bebas Neue';" class="py-10 lg:py-16 px-5">
+            <div class="max-w-[1400px] mx-auto">
+                <div class="flex lg:flex-row flex-col items-center justify-between">
+                    <img class="w-[280px] lg:w-[500px]" src="images/WK Files (Website)/WK-LOGO11.png" alt="WK Tattoo Logo">
+                    <div class="flex flex-col bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 lg:p-12 gap-8 mt-5 text-lg lg:text-2xl max-w-3xl text-left text-white">
+                        <h2 class="text-4xl lg:text-6xl tracking-wider text-white">
+                            ABOUT WK TATTOO
+                        </h2>
+                        <p class="">At WK Tattoo, we turn your ideas into art that lasts. Located in
+                            the heart of Metairie, LA. Our artists works in a variety of styles, including
+                            black and grey realism, fine-line, and traditional Japanese tattoos.
+                        </p>
+
+                        <p class="">We focus on creating a clean, safe, and welcoming 
+                            space where you can feel comfortable from start to finish. Every design is custom and made to reflect your story and your style.
+                        </p>
+
+                        <p class="">Whether it’s your first tattoo or you’ve been 
+                            collecting for years, we’re here to make the process easy, personal, and something you’ll be proud to wear. Let’s create something meaningful together.
+                        </p>
+
+                        <div class="mt-6 rounded-xl border border-zinc-700 bg-zinc-900/60 p-5">
+                            <p class="text-center text-2xl lg:text-3xl tracking-widest">
+                                WALK-INS WELCOME
+                            </p>
+
+                            <p class="text-center text-zinc-400">
+                                Appointments Encouraged
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <header class="w-full bg-gradient-to-r from-zinc-950 via-black to-zinc-900 w-full bg-white/10 backdrop-blur-xl border-t border-white/10">
         <footer style="font-family: 'Bebas Neue';" class="flex items-center flex-col gap-3 lg:gap-0 lg:flex-row justify-between mx-auto max-w-[1400px] py-6 px-6">

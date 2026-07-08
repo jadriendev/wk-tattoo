@@ -20,3 +20,7 @@ menuBtn.addEventListener("click", openMenu);
 closeBtn.addEventListener("click", closeMenu);
 
 overlay.addEventListener("click", closeMenu);
+
+const video = document.getElementById("heroVideo");
+
+video.pause();
