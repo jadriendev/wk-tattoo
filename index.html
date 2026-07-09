@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quattrocento:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/WK Files (Website)/WK-LOGO11.png" type="image/x-icon">
+    <!--Data AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Tailwind CSS-->
@@ -109,46 +111,39 @@
             </video>
         </section>
 
-        <section style="font-family: 'Bebas Neue';" class="py-10 lg:py-16 px-5">
-            <div class="max-w-[1400px] mx-auto">
-                <div class="flex lg:flex-row flex-col items-center justify-between">
-                    <img class="w-[280px] lg:w-[500px] drop-shadow-[0_0_35px_rgba(255,255,255,0.65)]" src="images/WK Files (Website)/WK-LOGO11.png" alt="WK Tattoo Logo">
-                    <div class="flex flex-col bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 lg:p-12 gap-8 mt-5 text-lg lg:text-2xl max-w-3xl text-left text-white">
-                        <h2 class="text-4xl lg:text-6xl tracking-wider text-white">
-                            ABOUT WK TATTOO
-                        </h2>
-                        <p class="">At WK Tattoo, we turn your ideas into art that lasts. Located in
-                            the heart of Metairie, LA. Our artists works in a variety of styles, including
-                            black and grey realism, fine-line, and traditional Japanese tattoos.
-                        </p>
+        <section class="relative h-screen bg-fixed bg-cover bg-center overflow-hidden" style="background-image: url('images/WK Files (Website)/WK GROUP PHOTO.jpg');">
+            <div class="absolute inset-0 bg-black/55"></div>
 
-                        <p class="">We focus on creating a clean, safe, and welcoming 
-                            space where you can feel comfortable from start to finish. Every design is custom and made to reflect your story and your style.
-                        </p>
+            <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-black"></div>
 
-                        <p class="">Whether it’s your first tattoo or you’ve been 
-                            collecting for years, we’re here to make the process easy, personal, and something you’ll be proud to wear. Let’s create something meaningful together.
-                        </p>
+            <div class="relative z-10 flex h-full items-center justify-center px-6">
+                <div class="text-center">
+                    <p style="font-family: 'Manrope';"
+                    class="uppercase tracking-[10px] text-zinc-300 text-sm lg:text-lg">
+                        WK Tattoo Studio
+                    </p>
 
-                        <div class="mt-6 rounded-xl border border-zinc-700 bg-zinc-900/60 p-5">
-                            <p class="text-center text-2xl lg:text-3xl tracking-widest">
-                                WALK-INS WELCOME
-                            </p>
+                    <h1 style="font-family: 'Bebas Neue';"
+                        class="mt-4 text-6xl md:text-8xl lg:text-[9rem] leading-none tracking-wider text-white drop-shadow-[0_0_25px_rgba(255,255,255,0.2)]">
+                        MEET THE TEAM
+                    </h1>
 
-                            <p class="text-center text-zinc-400">
-                                Appointments Encouraged
-                            </p>
-
-                        </div>
-                    </div>
+                    <p style="font-family: 'Manrope';"
+                    class="mt-6 max-w-2xl mx-auto text-zinc-300 text-lg lg:text-2xl">
+                        At WK Tattoo, we create custom tattoos and professional piercings in a clean, welcoming studio. Whether you're planning your first tattoo or adding to your collection, our artists and resident piercer are here to bring your vision to life.
+                    </p>
                 </div>
+            </div>
+
+            <div class="absolute bottom-10 inset-x-0 flex justify-center animate-bounce">
+                <i class="fa-solid fa-chevron-down text-3xl text-white/70"></i>
             </div>
         </section>
 
-        <section style="font-family: 'Bebas Neue';" class="py-10 lg:py-16 px-5 bg-gradient-to-br from-black via-zinc-900 to-black">
-            <div class="max-w-[1400px] mx-auto">
+        <section style="font-family: 'Bebas Neue';" class="py-10 lg:py-16 px-2 bg-gradient-to-br from-black via-zinc-900 to-black">
+            <div class="max-w-[1600px] mx-auto">
                 <h1 class="text-white text-center text-3xl lg:text-4xl mb-16">Meet our Artists</h1>
-                <div class="flex flex-col gap-16 lg:gap-32">
+                <div data-aos="fade-right" class="flex flex-col gap-16 lg:gap-32">
                     <div class="flex items-center justify-between flex-col lg:flex-row lg:px-10">
                         <div class="flex flex-col ml-0 lg:ml-16 items-center">
                             <img class="w-[150px] lg:w-[250px] rounded-xl border-2 border-gray-400 shadow-[0_0_15px_rgba(156,163,175,0.35)] transition-all duration-300 lg:hover:scale-105 object-cover lg:w-[200px]" src="images/WK Files (Website)/Kai/KAI.JPG" alt="Tattoo Artists">
@@ -157,13 +152,13 @@
                         </div>
 
                         <div class="mt-6 lg:mt-0">
-                            <p class="text-white max-w-xl lg:max-w-2xl text-center lg:text-left tracking-wide text-lg lg:text-2xl">"As the owner of WK Tattoo, Kai specializes in Traditional Japanese, Chinese-inspired designs, anime, watercolor, and fine line tattoos. Whether you’re looking for bold Japanese sleeves, custom anime pieces, or delicate fine line work, Kai creates tattoos that blend strong artistry with lasting quality."</p>
+                            <p class="text-white max-w-xl lg:max-w-2xl text-center lg:text-left tracking-wide text-lg lg:text-2xl">As the owner of WK Tattoo, Kai specializes in Traditional Japanese, Chinese-inspired designs, anime, watercolor, and fine line tattoos. Whether you’re looking for bold Japanese sleeves, custom anime pieces, or delicate fine line work, Kai creates tattoos that blend strong artistry with lasting quality.</p>
                         </div>
                     </div>
 
-                    <div class="flex items-center justify-between flex-col-reverse lg:flex-row lg:px-10">
+                    <div data-aos="fade-left" class="flex items-center justify-between flex-col-reverse lg:flex-row lg:px-10">
                         <div class="mt-6 lg:mt-0">
-                            <p class="text-white max-w-xl lg:max-w-2xl text-center lg:text-left tracking-wide text-lg lg:text-2xl">"Abel specializes in black and grey realism and portrait tattoos. From lifelike portraits to detailed memorial pieces, he focuses on creating realistic tattoos with depth, precision, and lasting impact."</p>
+                            <p class="text-white max-w-xl lg:max-w-2xl text-center lg:text-left tracking-wide text-lg lg:text-2xl">Abel specializes in black and grey realism and portrait tattoos. From lifelike portraits to detailed memorial pieces, he focuses on creating realistic tattoos with depth, precision, and lasting impact.</p>
                         </div>
 
                         <div class="flex flex-col ml-0 lg:ml-16 items-center">
@@ -173,7 +168,7 @@
                         </div>
                     </div>
 
-                    <div class="flex items-center justify-between flex-col lg:flex-row lg:px-10">
+                    <div data-aos="fade-right" class="flex items-center justify-between flex-col lg:flex-row lg:px-10">
                         <div class="flex flex-col ml-0 lg:ml-16 items-center">
                             <img class="w-[150px] lg:w-[250px] rounded-xl border-2 border-gray-400 shadow-[0_0_15px_rgba(156,163,175,0.35)] transition-all duration-300 lg:hover:scale-105 object-cover lg:w-[200px]" src="images/WK Files (Website)/Everett/EVERETT.JPG" alt="Tattoo Artists">
                             <h1 class="text-white text-center mt-2 tracking-wider text-3xl">Everett</h1>
@@ -181,13 +176,13 @@
                         </div>
 
                         <div class="mt-6 lg:mt-0">
-                            <p class="text-white max-w-xl lg:max-w-2xl text-center lg:text-left tracking-wide text-lg lg:text-2xl">"Everett specializes in black and grey realism, color realism, and new traditional tattoos. His versatile style allows him to create everything from vibrant color pieces to bold, highly detailed realism."</p>
+                            <p class="text-white max-w-xl lg:max-w-2xl text-center lg:text-left tracking-wide text-lg lg:text-2xl">Everett specializes in black and grey realism, color realism, and new traditional tattoos. His versatile style allows him to create everything from vibrant color pieces to bold, highly detailed realism.</p>
                         </div>
                     </div>
 
-                    <div class="flex items-center justify-between flex-col-reverse lg:flex-row lg:px-10">
+                    <div data-aos="fade-left" class="flex items-center justify-between flex-col-reverse lg:flex-row lg:px-10">
                         <div class="mt-6 lg:mt-0">
-                            <p class="text-white max-w-xl lg:max-w-2xl text-center lg:text-left tracking-wide text-lg lg:text-2xl">"Sara specializes in black and grey tattoos, anime, fine line work, and lettering. She creates clean, detailed tattoos ranging from delicate script and fine line designs to custom anime-inspired pieces."</p>
+                            <p class="text-white max-w-xl lg:max-w-2xl text-center lg:text-left tracking-wide text-lg lg:text-2xl">Sara specializes in black and grey tattoos, anime, fine line work, and lettering. She creates clean, detailed tattoos ranging from delicate script and fine line designs to custom anime-inspired pieces.</p>
                         </div>
 
                         <div class="flex flex-col ml-0 lg:ml-16 items-center">
@@ -197,7 +192,7 @@
                         </div>
                     </div>
 
-                    <div class="flex items-center justify-between flex-col lg:flex-row lg:px-10">
+                    <div data-aos="fade-right" class="flex items-center justify-between flex-col lg:flex-row lg:px-10">
                         <div class="flex flex-col ml-0 lg:ml-16 items-center">
                             <img class="w-[150px] lg:w-[250px] rounded-xl border-2 border-gray-400 shadow-[0_0_15px_rgba(156,163,175,0.35)] transition-all duration-300 lg:hover:scale-105 object-cover lg:w-[200px]" src="images/WK Files (Website)/Haley-Piercer/HALEY.JPG" alt="Tattoo Artists">
                             <h1 class="text-white text-center mt-2 tracking-wider text-3xl">HALEY</h1>
@@ -205,7 +200,7 @@
                         </div>
 
                         <div class="mt-6 lg:mt-0">
-                            <p class="text-white max-w-xl lg:max-w-2xl text-center lg:text-left tracking-wide text-lg lg:text-2xl">"The one behind every clean and precise piercing at WK Tattoo. Haley brings a steady hand and a calm energy to every appointment, making sure each client feels comfortable from start to finish."</p>
+                            <p class="text-white max-w-xl lg:max-w-2xl text-center lg:text-left tracking-wide text-lg lg:text-2xl">The one behind every clean and precise piercing at WK Tattoo. Haley brings a steady hand and a calm energy to every appointment, making sure each client feels comfortable from start to finish.</p>
                         </div>
                     </div>
                 </div>
@@ -248,5 +243,6 @@
         </footer>
     </header>
 </body>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script src="script.js"></script>
 </html>
