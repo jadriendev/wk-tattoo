@@ -206,6 +206,47 @@
                 </div>
             </div>
         </section>
+
+        <section style="font-family: 'Bebas Neue';" class="py-10 lg:py-16 px-2 bg-gradient-to-br from-black via-zinc-900 to-black">
+            <h1 class="text-white text-center text-3xl lg:text-4xl">
+                5-Star Experience
+            </h1>
+
+            <div class="mt-3 mb-16">
+                <p class="text-zinc-400 text-center">
+                    Real reviews from clients who trust
+                </p>
+                <p class="text-zinc-400 text-center">
+                    WK Tattoo to bring their ideas to life.
+                </p>
+            </div>
+
+            <div class="flex items-center justify-center gap-6">
+                <button id="prevReview"
+                    class="w-12 h-12 rounded-full bg-zinc-800 hover:bg-zinc-700 text-white transition">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <div id="reviewCard" class="max-w-xl h-[320px] w-full p-8 rounded-2xl bg-zinc-900 text-white text-center flex flex-col justify-between transition-all duration-500">
+                    <div class="flex-1 flex items-center justify-center">
+                        <p id="reviewText" class="text-lg italic leading-relaxed"></p>
+                    </div>
+
+                    <div>
+                        <h3 id="reviewName" class="font-bold text-xl"></h3>
+
+                        <div id="reviewStars"
+                            class="flex justify-center gap-1 mt-2 text-yellow-400 text-lg"></div>
+                    </div>
+
+                </div>
+
+                <button id="nextReview"
+                    class="w-12 h-12 rounded-full bg-zinc-800 hover:bg-zinc-700 text-white transition">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
     </main>
 
     <header class="w-full bg-gradient-to-r from-zinc-950 via-black to-zinc-900 w-full bg-white/10 backdrop-blur-xl border-t border-white/10">
