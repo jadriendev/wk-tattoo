@@ -273,21 +273,25 @@
         <section style="font-family: 'Bebas Neue';" class="py-10 lg:py-16 px-2 bg-gradient-to-br from-black via-zinc-900 to-black">
             <h1 class="text-white text-center text-3xl lg:text-4xl mb-10">Join our family</h1>
         
-            <form method="POST" class="flex items-center justify-center flex-col mx-auto gap-16 flex-col text-white rounded-xl max-w-5xl py-5 px-5">
-                <div class="flex items-center justify-center w-full gap-4 lg:flex-row flex-col">
-                    <input class="lg:mb-0 mb-10 border-b-2 border-gray-400 py-2 outline-none focus:border-red-500 bg-transparent w-full" type="text" placeholder="Enter your firstname *" name="first_name" required>
-                    <input class="border-b-2 border-gray-400 py-2 outline-none focus:border-red-500 bg-transparent w-full" type="text" placeholder="Enter your lastname *" name="last_name">
+            <form method="POST" class="text-white rounded-xl mx-auto max-w-5xl py-5 px-5">
+                <div class="flex items-center justify-center flex-col gap-16 flex-col">
+                    <div class="flex items-center justify-center w-full gap-4 lg:flex-row flex-col">
+                        <input class="lg:mb-0 mb-10 border-b-2 border-gray-400 py-2 outline-none focus:border-red-500 bg-transparent w-full" type="text" placeholder="Enter your firstname *" name="first_name" required>
+                        <input class="border-b-2 border-gray-400 py-2 outline-none focus:border-red-500 bg-transparent w-full" type="text" placeholder="Enter your lastname *" name="last_name">
+                    </div>
+
+                    <div class="w-full">
+                        <input class="border-b-2 border-gray-400 py-2 outline-none focus:border-red-500 bg-transparent w-full" type="email" placeholder="Enter your email *" name="email" required>
+                    </div>
+
+                    <div class="w-full">
+                        <input class="border-b-2 border-gray-400 py-2 outline-none focus:border-red-500 bg-transparent w-full" type="text" placeholder="Share your tattoo idea *" name="tattoo_idea" required>
+                    </div>
                 </div>
 
-                <div class="w-full">
-                    <input class="border-b-2 border-gray-400 py-2 outline-none focus:border-red-500 bg-transparent w-full" type="email" placeholder="Enter your email *" name="email" required>
+                <div class="mt-7 justify-self-end">
+                    <input class="border-2 border-white py-2 px-8 rounded-xl cursor-pointer transition-all duration-300 hover:bg-zinc-700 text-xl tracking-wide" type="submit" value="Submit">
                 </div>
-
-                <div class="w-full">
-                    <input class="border-b-2 border-gray-400 py-2 outline-none focus:border-red-500 bg-transparent w-full" type="text" placeholder="Share your tattoo idea *" name="tattoo_idea" required>
-                </div>
-
-                <input class="border-2 border-white py-2 px-8 rounded-xl cursor-pointer transition-all duration-300 hover:bg-zinc-700 ml-auto text-xl tracking-wide" type="submit" value="Submit">
             </form>
         </section>
 
