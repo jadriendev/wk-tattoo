@@ -104,6 +104,8 @@ const reviewName = document.getElementById("reviewName");
 const reviewStars = document.getElementById("reviewStars");
 const prevBtn = document.getElementById("prevReview");
 const nextBtn = document.getElementById("nextReview");
+const prevBtnMobile = document.getElementById("prevReviewMobile");
+const nextBtnMobile = document.getElementById("nextReviewMobile");
 
 let current = 0;
 
@@ -125,15 +127,33 @@ function animateReview(index) {
 
 loadReview(current);
 
-nextBtn.addEventListener("click", () => {
-    current = (current + 1) % reviews.length;
-    animateReview(current);
-});
+if (nextBtn) {
+    nextBtn.addEventListener("click", () => {
+        current = (current + 1) % reviews.length;
+        animateReview(current);
+    });
+}
 
-prevBtn.addEventListener("click", () => {
-    current = (current - 1 + reviews.length) % reviews.length;
-    animateReview(current);
-});
+if (prevBtn) {
+    prevBtn.addEventListener("click", () => {
+        current = (current - 1 + reviews.length) % reviews.length;
+        animateReview(current);
+    });
+}
+
+if (nextBtnMobile) {
+    nextBtnMobile.addEventListener("click", () => {
+        current = (current + 1) % reviews.length;
+        animateReview(current);
+    });
+}
+
+if (prevBtnMobile) {
+    prevBtnMobile.addEventListener("click", () => {
+        current = (current - 1 + reviews.length) % reviews.length;
+        animateReview(current);
+    });
+}
 
 if (reviews.length > 1) {
     setInterval(() => {
