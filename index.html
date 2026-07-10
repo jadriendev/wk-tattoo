@@ -99,7 +99,7 @@
         </div>
     </header>
 
-    <main class="flex-1 pt-[103px] lg:pt-[130px]">
+    <main class="pt-[103px] lg:pt-[130px]">
         <section class="w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[600px] xl:h-[800px] overflow-hidden">
             <video id="heroVideo"
                 class="w-full h-full object-cover"
@@ -221,13 +221,15 @@
                 </p>
             </div>
 
-            <div class="flex items-center justify-center gap-6">
+            <div class="flex flex-col lg:flex-row items-center justify-center gap-6">
                 <button id="prevReview"
-                    class="w-12 h-12 rounded-full bg-zinc-800 hover:bg-zinc-700 text-white transition">
+                    class="hidden lg:flex w-12 h-12 rounded-full bg-zinc-800 hover:bg-zinc-700 text-white items-center justify-center">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
 
-                <div id="reviewCard" class="max-w-xl h-[320px] w-full p-8 rounded-2xl bg-zinc-900 text-white text-center flex flex-col justify-between transition-all duration-500">
+                <div id="reviewCard"
+                    class="w-full max-w-xl min-h-[320px] p-8 rounded-2xl bg-zinc-900 text-white text-center flex flex-col justify-between transition-all duration-500">
+
                     <div class="flex-1 flex items-center justify-center">
                         <p id="reviewText" class="text-lg italic leading-relaxed"></p>
                     </div>
@@ -242,23 +244,88 @@
                 </div>
 
                 <button id="nextReview"
-                    class="w-12 h-12 rounded-full bg-zinc-800 hover:bg-zinc-700 text-white transition">
+                    class="hidden lg:flex w-12 h-12 rounded-full bg-zinc-800 hover:bg-zinc-700 text-white items-center justify-center">
                     <i class="fa-solid fa-chevron-right"></i>
                 </button>
+
+                <div class="flex gap-4 lg:hidden">
+                    <button id="prevReviewMobile"
+                        class="w-10 h-10 rounded-full bg-zinc-800 text-white">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+
+                    <button id="nextReviewMobile"
+                        class="w-10 h-10 rounded-full bg-zinc-800 text-white">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
             </div>
         </section>
 
         <section style="font-family: 'Bebas Neue';" class="py-10 lg:py-16 px-2 bg-gradient-to-br from-black via-zinc-900 to-black">
             <h1 class="text-white text-center text-3xl lg:text-4xl">We're located at</h1>
 
-            <div class="">
-
+            <div class="flex items-center justify-center mt-10">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4161.301804633463!2d-90.16280998833317!3d30.00800782019059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620b1c215899909%3A0x57951db0c6fb028f!2sWK%20Tattoos%20and%20Piercings!5e1!3m2!1sen!2sph!4v1783693960299!5m2!1sen!2sph" width="800" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
         </section>
 
         <section style="font-family: 'Bebas Neue';" class="py-10 lg:py-16 px-2 bg-gradient-to-br from-black via-zinc-900 to-black">
-            <div class="">
-                
+            <h1 class="text-white text-center text-3xl lg:text-4xl mb-10">Join our family</h1>
+        
+            <form method="POST" class="flex items-center justify-center flex-col mx-auto gap-16 flex-col text-white rounded-xl max-w-5xl py-5 px-5">
+                <div class="flex items-center justify-center w-full gap-4 lg:flex-row flex-col">
+                    <input class="lg:mb-0 mb-10 border-b-2 border-gray-400 py-2 outline-none focus:border-red-500 bg-transparent w-full" type="text" placeholder="Enter your firstname *" name="first_name" required>
+                    <input class="border-b-2 border-gray-400 py-2 outline-none focus:border-red-500 bg-transparent w-full" type="text" placeholder="Enter your lastname *" name="last_name">
+                </div>
+
+                <div class="w-full">
+                    <input class="border-b-2 border-gray-400 py-2 outline-none focus:border-red-500 bg-transparent w-full" type="email" placeholder="Enter your email *" name="email" required>
+                </div>
+
+                <div class="w-full">
+                    <input class="border-b-2 border-gray-400 py-2 outline-none focus:border-red-500 bg-transparent w-full" type="text" placeholder="Share your tattoo idea *" name="tattoo_idea" required>
+                </div>
+
+                <input class="border-2 border-white py-2 px-8 rounded-xl cursor-pointer transition-all duration-300 hover:bg-zinc-700 ml-auto text-xl tracking-wide" type="submit" value="Submit">
+            </form>
+        </section>
+
+        <section style="font-family: 'Bebas Neue';" class="py-10 lg:py-16 px-2 bg-gradient-to-br from-black via-zinc-900 to-black">
+            <h1 class="text-white text-center text-3xl lg:text-4xl mb-10">Visit Us</h1>
+
+            <div class="flex items-center justify-center">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-6xl">
+                    <div class="bg-zinc-800 py-6 px-5 text-center flex flex-col gap-4 rounded-xl max-w-sm transition-all duration-300 lg:hover:scale-105">
+                        <div class="">
+                            <i class="text-3xl fa fa-location-dot text-white"></i>
+                        </div>
+
+                        <div class="">
+                            <p class="text-white text-xl tracking-wide">3200 Severn Ave Suite120, Metairie, LA 70002</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-zinc-800 py-6 px-3 text-center flex flex-col gap-4 rounded-xl max-w-sm transition-all duration-300 lg:hover:scale-105">
+                        <div class="">
+                            <i class="text-3xl fa fa-clock text-white"></i>
+                        </div>
+
+                        <div class="">
+                            <p class="text-white text-xl tracking-wide">Open Monday - Sunday from 12PM - 9PM</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-zinc-800 py-6 px-3 text-center flex flex-col gap-4 rounded-xl max-w-sm transition-all duration-300 lg:hover:scale-105">
+                        <div class="">
+                            <i class="text-3xl fa fa-phone text-white"></i>
+                        </div>
+
+                        <div class="">
+                            <p class="text-white text-xl tracking-wide">Contact us at (504) 892-2668</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
