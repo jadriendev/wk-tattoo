@@ -161,3 +161,14 @@ if (reviews.length > 1) {
         animateReview(current);
     }, 5000);
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    document.querySelectorAll("img").forEach(img => {
+
+        img.loading = "lazy";
+        img.decoding = "async";
+
+    });
+
+});
