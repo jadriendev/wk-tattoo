@@ -126,13 +126,18 @@
                             </p>
                         </div>
 
-                        <a href="artists/kai.html" class="flex items-center justify-between rounded-2xl border border-white/15 bg-zinc-900/70 px-5 py-4 text-white transition-all duration-300 hover:bg-white hover:text-black">
+                        <button class="viewWorks flex w-full items-center justify-between rounded-2xl border border-white/15 bg-zinc-900/70 px-5 py-4 text-white transition-all duration-300 hover:bg-white hover:text-black"
+                            data-artist="kai"
+                            data-name="Kai"
+                            data-role="Owner & Tattoo Artist">
+
                             <span class="tracking-wider">
                                 View Works
                             </span>
 
                             <i class="fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
-                        </a>
+
+                        </button>
                     </div>
                 </div>
 
@@ -158,13 +163,20 @@
                             </p>
                         </div>
 
-                        <a href="artists/abel.html" class="flex items-center justify-between rounded-2xl border border-white/15 bg-zinc-900/70 px-5 py-4 text-white transition-all duration-300 hover:bg-white hover:text-black">
+                        <button
+                            class="viewWorks flex w-full items-center justify-between rounded-2xl border border-white/15 bg-zinc-900/70 px-5 py-4 text-white transition-all duration-300 hover:bg-white hover:text-black"
+
+                            data-artist="abel"
+                            data-name="Abel"
+                            data-role="Tattoo Artist">
+
                             <span class="tracking-wider">
                                 View Works
                             </span>
 
                             <i class="fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
-                        </a>
+
+                        </button>
                     </div>
                 </div>
 
@@ -190,13 +202,20 @@
                             </p>
                         </div>
 
-                        <a href="artists/everett.html" class="flex items-center justify-between rounded-2xl border border-white/15 bg-zinc-900/70 px-5 py-4 text-white transition-all duration-300 hover:bg-white hover:text-black">
+                        <button
+                            class="viewWorks flex w-full items-center justify-between rounded-2xl border border-white/15 bg-zinc-900/70 px-5 py-4 text-white transition-all duration-300 hover:bg-white hover:text-black"
+
+                            data-artist="everett"
+                            data-name="Everett"
+                            data-role="Tattoo Artist">
+
                             <span class="tracking-wider">
                                 View Works
                             </span>
 
                             <i class="fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
-                        </a>
+
+                        </button>
                     </div>
                 </div>
 
@@ -222,13 +241,20 @@
                             </p>
                         </div>
 
-                        <a href="artists/sara.html" class="flex items-center justify-between rounded-2xl border border-white/15 bg-zinc-900/70 px-5 py-4 text-white transition-all duration-300 hover:bg-white hover:text-black">
+                        <button
+                            class="viewWorks flex w-full items-center justify-between rounded-2xl border border-white/15 bg-zinc-900/70 px-5 py-4 text-white transition-all duration-300 hover:bg-white hover:text-black"
+
+                            data-artist="sara"
+                            data-name="Sara"
+                            data-role="Tattoo Artist">
+
                             <span class="tracking-wider">
                                 View Works
                             </span>
 
                             <i class="fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
-                        </a>
+
+                        </button>
                     </div>
                 </div>
 
@@ -254,13 +280,20 @@
                             </p>
                         </div>
 
-                        <a href="artists/haley.html" class="flex items-center justify-between rounded-2xl border border-white/15 bg-zinc-900/70 px-5 py-4 text-white transition-all duration-300 hover:bg-white hover:text-black">
+                        <button
+                            class="viewWorks flex w-full items-center justify-between rounded-2xl border border-white/15 bg-zinc-900/70 px-5 py-4 text-white transition-all duration-300 hover:bg-white hover:text-black"
+
+                            data-artist="haley"
+                            data-name="Haley"
+                            data-role="Resident Piercer">
+
                             <span class="tracking-wider">
                                 View Works
                             </span>
 
                             <i class="fa-solid fa-arrow-right transition-transform duration-300 group-hover:translate-x-1"></i>
-                        </a>
+
+                        </button>
                     </div>
                 </div>
             </div>
@@ -339,7 +372,57 @@
             </div>
         </footer>
     </header>
+
+    <div id="portfolioModal" class="fixed inset-0 z-[9999] hidden items-center justify-center bg-black/80 backdrop-blur-lg p-4">
+        <div id="modalContainer" class="relative w-full max-w-6xl scale-95 opacity-0 transition-all duration-300">
+
+            <button id="closePortfolio"
+                class="absolute -top-14 right-0 text-white text-3xl hover:text-zinc-300 transition z-30">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <button id="prevImage"
+                class="absolute left-3 top-1/2 -translate-y-1/2 z-30 h-12 w-12 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-white transition hover:bg-white hover:text-black">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <button id="nextImage"
+                class="absolute right-3 top-1/2 -translate-y-1/2 z-30 h-12 w-12 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-white transition hover:bg-white hover:text-black">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <div
+                class="overflow-hidden rounded-3xl border border-white/10 bg-zinc-900 shadow-[0_30px_80px_rgba(0,0,0,.6)]">
+
+                <img id="portfolioImage"
+                    src=""
+                    class="h-[70vh] w-full object-contain bg-black transition-all duration-300">
+
+            </div>
+
+            <div class="mt-5 flex flex-col lg:flex-row items-center justify-between gap-5">
+                <div>
+                    <h2 id="artistTitle"
+                        style="font-family:'Bebas Neue';"
+                        class="text-4xl tracking-wider text-white">
+                        Kai
+                    </h2>
+
+                    <p id="artistRole"
+                        style="font-family:'Manrope';"
+                        class="uppercase tracking-[.25em] text-zinc-400 text-sm">
+                        Owner & Tattoo Artist
+                    </p>
+                </div>
+
+                <div id="carouselDots"
+                    class="flex items-center gap-2">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script src="script.js"></script>
+<script src="portfolio.js"></script>
 </html>
