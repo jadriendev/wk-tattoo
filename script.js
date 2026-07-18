@@ -17,17 +17,6 @@ menuBtn.addEventListener("click", openMenu);
 closeBtn.addEventListener("click", closeMenu);
 overlay.addEventListener("click", closeMenu);
 
-const video = document.getElementById("heroVideo");
-
-video.pause();
-
-AOS.init({
-    duration: 1000,
-    once: true,
-    easing: "ease-out-cubic",
-    offset: 100,
-    disable: () => window.innerWidth < 768
-});
 
 const reviews = [
     {
@@ -159,7 +148,7 @@ if (reviews.length > 1) {
     setInterval(() => {
         current = (current + 1) % reviews.length;
         animateReview(current);
-    }, 5000);
+    }, 10000);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
