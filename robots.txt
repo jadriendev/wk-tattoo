@@ -1,0 +1,6 @@
+# robots.txt for WK Tattoo NOLA
+
+User-agent: *
+Allow: /
+
+Sitemap: https://wktattoonola.com/sitemap.xml
