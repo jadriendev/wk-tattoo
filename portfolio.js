@@ -87,6 +87,22 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentArtist = "";
     let currentIndex = 0;
 
+    function preloadNearbyImages() {
+
+    const images = artistWorks[currentArtist];
+
+    const next = (currentIndex + 1) % images.length;
+    const prev = (currentIndex - 1 + images.length) % images.length;
+
+    [next, prev].forEach(i => {
+
+        const img = new Image();
+        img.src = images[i];
+
+    });
+
+}
+
     function renderDots() {
 
         dots.innerHTML = "";
@@ -121,16 +137,21 @@ document.addEventListener("DOMContentLoaded", () => {
     function updateImage() {
 
         image.classList.add("opacity-0");
+        const img = new Image();
 
-        setTimeout(() => {
+        img.onload = () => {
 
-            image.src = artistWorks[currentArtist][currentIndex];
+            image.src = img.src;
 
             image.classList.remove("opacity-0");
 
             renderDots();
 
-        }, 150);
+            preloadNearbyImages();
+
+        };
+
+img.src = artistWorks[currentArtist][currentIndex];
 
     }
 
